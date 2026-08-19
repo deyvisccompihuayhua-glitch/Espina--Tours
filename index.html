@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Espinar Turismo | Descubre nuestra tierra</title>
+    <meta name="description" content="Descubre los destinos turísticos de Espinar: Tres Cañones, Maukallaqta, K'anamarca, T'aqrachullo y María Fortaleza.">
+
+    <link rel="stylesheet"
+          href="estilos.css">
+
+</head>
+
+
+<body>
+
+<!-- SELECTOR DE IDIOMA INICIAL -->
+<div id="languageModal" class="modal language-modal active">
+    <div class="language-content">
+        <div class="language-icon">🌎</div>
+        <span class="mini-title">WELCOME / BIENVENIDO</span>
+        <h2 id="languageTitle">Elige tu idioma</h2>
+        <p id="languageText">Selecciona el idioma que prefieras para navegar por Espinar Turismo.</p>
+        <div class="language-grid">
+            <button type="button" data-lang="es" onclick="seleccionarIdioma('es')">🇵🇪 Español</button>
+            <button type="button" data-lang="en" onclick="seleccionarIdioma('en')">🇺🇸 English</button>
+            <button type="button" data-lang="pt" onclick="seleccionarIdioma('pt')">🇧🇷 Português</button>
+            <button type="button" data-lang="fr" onclick="seleccionarIdioma('fr')">🇫🇷 Français</button>
+            <button type="button" data-lang="de" onclick="seleccionarIdioma('de')">🇩🇪 Deutsch</button>
+        </div>
+        <button type="button" id="languageContinueBtn" class="language-continue-btn" onclick="continuarIdioma()">
+            Continuar →
+        </button>
+    </div>
+</div>
+
+
+<!-- ==================================================
+     NAVEGACIÓN
+================================================== -->
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <span>🏔️</span>
+
+        <div>
+            <strong>ESPINAR</strong>
+            <small>TURISMO</small>
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <a href="#inicio">Inicio</a>
+
+        <a href="#destinos">Destinos</a>
+
+        <a href="#servicios">Servicios</a>
+
+        <a href="#paquetes">Paquetes</a>
+
+        <a href="#ofertas">Ofertas</a>
+
+    </nav>
+
+
+    <button class="language-nav-btn" onclick="abrirSelectorIdioma()">🌐</button>
+
+    <button class="menu-btn"
+            onclick="abrirMenu()">
+
+        ☰
+
+    </button>
+
+</header>
+
+
+
+<!-- ==================================================
+     INICIO
+================================================== -->
+
+<section id="inicio"
+         class="hero">
+
+    <div class="hero-overlay"></div>
+
+
+    <div class="hero-content">
+
+        <span class="hero-badge">
+            🏔️ TURISMO DE ESPINAR
+        </span>
+
+
+        <h1>
+
+            Descubre
+
+            <span>Espinar</span>
+
+        </h1>
+
+
+        <p>
+
+            Vive experiencias únicas entre paisajes,
+            historia, cultura y naturaleza.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a href="#destinos"
+               class="btn-primary">
+
+                🗺️ Explorar destinos
+
+            </a>
+
+
+            <a href="#paquetes"
+               class="btn-outline">
+
+                🎒 Ver paquetes
+
+            </a>
+
+        </div>
+
+
+        <div class="hero-stats">
+
+            <div>
+
+                <strong>5</strong>
+
+                <span>
+                    Destinos
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong>✓</strong>
+
+                <span>
+                    Guías locales
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong>★</strong>
+
+                <span>
+                    Experiencias
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="scroll-down">
+
+        ↓ Descubre nuestra tierra
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     DESTINOS
+================================================== -->
+
+<section id="destinos"
+         class="section">
+
+    <div class="section-title">
+
+        <span>DESCUBRE</span>
+
+        <h2>
+            Nuestros destinos
+        </h2>
+
+        <p>
+            Conoce los lugares que hacen de Espinar
+            un destino lleno de historia y naturaleza.
+        </p>
+
+    </div>
+
+
+    <div class="destinos-grid">
+
+
+        <!-- TRES CAÑONES -->
+
+        <article class="destino-card">
+
+            <div class="card-image">
+
+                <img src="imagenes/tres-canones.jpg"
+                     alt="Tres Cañones">
+
+                <span>
+                    NATURALEZA
+                </span>
+
+            </div>
+
+
+            <div class="card-content">
+
+                <h3>
+                    Tres Cañones
+                </h3>
+
+                <p>
+                    Paisajes impresionantes,
+                    formaciones rocosas y aventura.
+                </p>
+
+
+                <div class="card-info">
+
+                    <span>📍 Suykutambo</span>
+
+                    <span>⏱️ 1 día</span>
+
+                </div>
+
+
+                <button
+                    onclick="abrirDestino('canones')">
+
+                    Ver información →
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- MAUKALLACTA -->
+
+        <article class="destino-card">
+
+            <div class="card-image">
+
+                <img src="imagenes/maukallacta.jpg"
+                     alt="Maukallacta">
+
+                <span>
+                    HISTORIA
+                </span>
+
+            </div>
+
+
+            <div class="card-content">
+
+                <h3>
+                    Maukallacta
+                </h3>
+
+                <p>
+                    Descubre el patrimonio arqueológico
+                    y cultural de Espinar.
+                </p>
+
+
+                <div class="card-info">
+
+                    <span>📍 Espinar</span>
+
+                    <span>⏱️ 1 día</span>
+
+                </div>
+
+
+                <button
+                    onclick="abrirDestino('maukallacta')">
+
+                    Ver información →
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- KANARMACA -->
+
+        <article class="destino-card">
+
+            <div class="card-image">
+
+                <img src="imagenes/kanarmaca.jpg"
+                     alt="K'anamarca">
+
+                <span>
+                    CULTURA
+                </span>
+
+            </div>
+
+
+            <div class="card-content">
+
+                <h3>
+                    K'anamarca
+                </h3>
+
+                <p>
+                    Conoce la historia y cultura
+                    de nuestros antepasados.
+                </p>
+
+
+                <div class="card-info">
+
+                    <span>📍 Espinar</span>
+
+                    <span>⏱️ 1 día</span>
+
+                </div>
+
+
+                <button
+                    onclick="abrirDestino('kanarmaca')">
+
+                    Ver información →
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- TAQRACHULLO -->
+
+        <article class="destino-card">
+
+            <div class="card-image">
+
+                <img src="imagenes/taqrachullo.jpg"
+                     alt="T'aqrachullo">
+
+                <span>
+                    PATRIMONIO
+                </span>
+
+            </div>
+
+
+            <div class="card-content">
+
+                <h3>
+                    T'aqrachullo
+                </h3>
+
+                <p>
+                    Una experiencia para conocer
+                    el patrimonio de Espinar.
+                </p>
+
+
+                <div class="card-info">
+
+                    <span>📍 Espinar</span>
+
+                    <span>⏱️ 1 día</span>
+
+                </div>
+
+
+                <button
+                    onclick="abrirDestino('taqrachullo')">
+
+                    Ver información →
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- MARIA FORTALEZA -->
+
+        <article class="destino-card">
+
+            <div class="card-image">
+
+                <img src="imagenes/maria-fortaleza.jpg"
+                     alt="María Fortaleza">
+
+                <span>
+                    HISTORIA
+                </span>
+
+            </div>
+
+
+            <div class="card-content">
+
+                <h3>
+                    María Fortaleza
+                </h3>
+
+                <p>
+                    Descubre un espacio de valor
+                    histórico y cultural.
+                </p>
+
+
+                <div class="card-info">
+
+                    <span>📍 Espinar</span>
+
+                    <span>⏱️ 1 día</span>
+
+                </div>
+
+
+                <button
+                    onclick="abrirDestino('maria')">
+
+                    Ver información →
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     SERVICIOS
+================================================== -->
+
+<section id="servicios"
+         class="section services-section">
+
+
+    <div class="section-title">
+
+        <span>TODO INCLUIDO</span>
+
+        <h2>
+            Servicios turísticos
+        </h2>
+
+        <p>
+            Elige los servicios que necesitas
+            para disfrutar tu experiencia.
+        </p>
+
+    </div>
+
+
+    <div class="services-grid">
+
+
+        <div class="service-card">
+
+            <div>
+                🚐
+            </div>
+
+            <h3>
+                Transporte
+            </h3>
+
+            <p>
+                Transporte turístico para
+                tus recorridos.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div>
+                🧑‍🏫
+            </div>
+
+            <h3>
+                Guía turístico
+            </h3>
+
+            <p>
+                Guías locales que conocen
+                nuestra historia.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div>
+                🍽️
+            </div>
+
+            <h3>
+                Gastronomía
+            </h3>
+
+            <p>
+                Disfruta de la gastronomía
+                de nuestra región.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div>
+                🏨
+            </div>
+
+            <h3>
+                Alojamiento
+            </h3>
+
+            <p>
+                Opciones de alojamiento
+                según tu paquete.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="custom-service">
+
+        <div>
+
+            <span>
+                🧩
+            </span>
+
+            <div>
+
+                <h3>
+                    Personaliza tu experiencia
+                </h3>
+
+                <p>
+                    ¿No necesitas todos los servicios?
+                    Elige solamente lo que quieres.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <button
+            onclick="abrirPersonalizador()">
+
+            Personalizar mi viaje →
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     PAQUETES
+================================================== -->
+
+<section id="paquetes"
+         class="section">
+
+    <div class="section-title">
+
+        <span>ELIGE TU EXPERIENCIA</span>
+
+        <h2>
+            Paquetes turísticos
+        </h2>
+
+    </div>
+
+
+    <div class="packages-grid">
+
+
+        <div class="package-card">
+
+            <span class="package-tag">
+                AVENTURA
+            </span>
+
+            <h3>
+                Aventura en Tres Cañones
+            </h3>
+
+            <p>
+                Transporte + guía + alimentación.
+            </p>
+
+            <strong>
+                S/ 99
+            </strong>
+
+            <button
+                onclick="abrirPersonalizador('canones')">
+
+                Personalizar
+
+            </button>
+
+        </div>
+
+
+
+        <div class="package-card featured">
+
+            <span class="package-tag">
+                MÁS ELEGIDO
+            </span>
+
+            <h3>
+                Ruta Cultural
+            </h3>
+
+            <p>
+                Maukallacta + K'anamarca.
+            </p>
+
+            <strong>
+                S/ 169
+            </strong>
+
+            <button
+                onclick="abrirPersonalizador('maukallacta')">
+
+                Personalizar
+
+            </button>
+
+        </div>
+
+
+
+        <div class="package-card">
+
+            <span class="package-tag">
+                COMPLETO
+            </span>
+
+            <h3>
+                Experiencia Espinar
+            </h3>
+
+            <p>
+                Disfruta de nuestros principales
+                atractivos.
+            </p>
+
+            <strong>
+                S/ 349
+            </strong>
+
+            <button
+                onclick="abrirPersonalizador('canones')">
+
+                Personalizar
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     OFERTAS
+================================================== -->
+
+<section id="ofertas"
+         class="section offers-section">
+
+
+    <div class="section-title">
+
+        <span>OFERTAS ESPECIALES</span>
+
+        <h2>
+            Viaja y ahorra
+        </h2>
+
+    </div>
+
+
+    <div class="offers-grid">
+
+
+        <div class="offer-card">
+
+            <img src="imagenes/tres-canones.jpg"
+                 alt="Oferta Tres Cañones">
+
+            <div class="offer-content">
+
+                <span>
+                    🔥 OFERTA
+                </span>
+
+                <h3>
+                    Tres Cañones
+                </h3>
+
+                <p>
+                    Experiencia de aventura
+                    con guía y alimentación.
+                </p>
+
+                <div class="price">
+
+                    <del>
+                        S/ 120
+                    </del>
+
+                    <strong>
+                        S/ 99
+                    </strong>
+
+                </div>
+
+                <button
+                    onclick="abrirPersonalizador('canones')">
+
+                    Aprovechar oferta
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="offer-card">
+
+            <img src="imagenes/maukallacta.jpg"
+                 alt="Oferta Maukallacta">
+
+            <div class="offer-content">
+
+                <span>
+                    🔥 OFERTA
+                </span>
+
+                <h3>
+                    Maukallacta
+                </h3>
+
+                <p>
+                    Conoce nuestra historia
+                    y patrimonio.
+                </p>
+
+                <div class="price">
+
+                    <del>
+                        S/ 120
+                    </del>
+
+                    <strong>
+                        S/ 99
+                    </strong>
+
+                </div>
+
+                <button
+                    onclick="abrirPersonalizador('maukallacta')">
+
+                    Aprovechar oferta
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="offer-card">
+
+            <img src="imagenes/kanarmaca.jpg"
+                 alt="Oferta K'anamarca">
+
+            <div class="offer-content">
+
+                <span>
+                    🔥 OFERTA
+                </span>
+
+                <h3>
+                    K'anamarca
+                </h3>
+
+                <p>
+                    Una experiencia cultural
+                    inolvidable.
+                </p>
+
+                <div class="price">
+
+                    <del>
+                        S/ 110
+                    </del>
+
+                    <strong>
+                        S/ 89
+                    </strong>
+
+                </div>
+
+                <button
+                    onclick="abrirPersonalizador('kanarmaca')">
+
+                    Aprovechar oferta
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     PÁGINA DETALLADA DEL DESTINO
+================================================== -->
+
+<section id="paginaDestino"
+         class="destination-page">
+
+
+    <div class="destination-container">
+
+
+        <button class="back-button"
+                onclick="volverDestinos()">
+
+            ← Volver a destinos
+
+        </button>
+
+
+        <div class="destination-hero"
+             id="destinationHero">
+
+            <div>
+
+                <span id="detailCategory">
+                    NATURALEZA
+                </span>
+
+                <h1 id="detailTitle">
+                    Tres Cañones
+                </h1>
+
+                <p id="detailLocation">
+                    📍 Espinar
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="detail-grid">
+
+
+            <div class="detail-main">
+
+                <span class="mini-title">
+                    CONOCE ESTE LUGAR
+                </span>
+
+                <h2 id="detailSubtitle">
+                    Descubre Tres Cañones
+                </h2>
+
+                <p id="detailDescription">
+                </p>
+
+
+                <div class="quick-info">
+
+                    <div>
+
+                        📍
+
+                        <strong>
+                            Ubicación
+                        </strong>
+
+                        <span id="infoLocation">
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        ⏱️
+
+                        <strong>
+                            Duración
+                        </strong>
+
+                        <span id="infoDuration">
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        🌄
+
+                        <strong>
+                            Experiencia
+                        </strong>
+
+                        <span id="infoExperience">
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        👥
+
+                        <strong>
+                            Ideal para
+                        </strong>
+
+                        <span id="infoIdeal">
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SERVICIOS DEL DESTINO -->
+
+                <h2 class="subsection-title">
+                    ¿Qué incluye?
+                </h2>
+
+
+                <div class="included-grid">
+
+
+                    <div>
+
+                        🚐
+
+                        <strong>
+                            Transporte
+                        </strong>
+
+                        <p id="infoTransport">
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        🧑‍🏫
+
+                        <strong>
+                            Guía
+                        </strong>
+
+                        <p id="infoGuide">
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        🍽️
+
+                        <strong>
+                            Comida
+                        </strong>
+
+                        <p id="infoFood">
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        🏨
+
+                        <strong>
+                            Alojamiento
+                        </strong>
+
+                        <p id="infoHotel">
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- ITINERARIO -->
+
+                <h2 class="subsection-title">
+                    🕐 Itinerario recomendado
+                </h2>
+
+
+                <div class="itinerary"
+                     id="itinerary">
+
+                </div>
+
+
+                <!-- RECOMENDACIONES -->
+
+                <h2 class="subsection-title">
+                    🎒 Antes de viajar
+                </h2>
+
+
+                <div class="tips">
+
+                    <div>
+                        👟
+                        Lleva calzado cómodo.
+                    </div>
+
+                    <div>
+                        🧥
+                        Lleva ropa adecuada para el clima.
+                    </div>
+
+                    <div>
+                        💧
+                        Lleva agua durante el recorrido.
+                    </div>
+
+                    <div>
+                        📸
+                        No olvides tu cámara.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SIDEBAR -->
+
+            <aside class="detail-sidebar">
+
+                <div class="booking-box">
+
+                    <span>
+                        DESDE
+                    </span>
+
+                    <strong id="detailPrice">
+                        S/ 99
+                    </strong>
+
+                    <p>
+                        por persona
+                    </p>
+
+
+                    <button
+                        onclick="abrirPersonalizador()">
+
+                        🧩 Personalizar viaje
+
+                    </button>
+
+
+                    <button class="secondary-button"
+                            onclick="abrirReservaDirecta()">
+
+                        🎟️ Reservar paquete
+
+                    </button>
+
+                </div>
+
+
+                <div class="map-box">
+
+                    <h3>
+                        🗺️ Ubicación
+                    </h3>
+
+                    <div class="map-placeholder">
+
+                        <span>
+                            📍
+                        </span>
+
+                        <p id="mapText">
+                            Espinar, Cusco
+                        </p>
+
+                        <a id="mapLink"
+                           href="#"
+                           target="_blank">
+
+                            Ver en Google Maps →
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     MODAL PERSONALIZADOR
+================================================== -->
+
+<div id="customModal"
+     class="modal">
+
+    <div class="modal-content">
+
+
+        <button class="close-modal"
+                onclick="cerrarPersonalizador()">
+
+            ×
+
+        </button>
+
+
+        <span class="mini-title">
+            CREA TU EXPERIENCIA
+        </span>
+
+
+        <h2>
+            Personaliza tu viaje
+        </h2>
+
+
+        <p>
+            Selecciona solamente los servicios
+            que necesitas.
+        </p>
+
+
+        <div class="custom-form">
+
+
+            <label>
+                Destino
+            </label>
+
+            <select id="customDestination"
+                    onchange="actualizarPrecio()">
+
+                <option value="canones">
+                    Tres Cañones
+                </option>
+
+                <option value="maukallacta">
+                    Maukallacta
+                </option>
+
+                <option value="kanarmaca">
+                    K'anamarca
+                </option>
+
+                <option value="taqrachullo">
+                    T'aqrachullo
+                </option>
+
+                <option value="maria">
+                    María Fortaleza
+                </option>
+
+            </select>
+
+
+            <label>
+                Personas
+            </label>
+
+            <input type="number"
+                   id="customPeople"
+                   value="1"
+                   min="1"
+                   max="20"
+                   onchange="actualizarPrecio()">
+
+
+            <div class="service-options">
+
+                <div class="transport-choice">
+                    <h3>🚌 Transporte incluido</h3>
+                    <p>Elige una modalidad. El precio ya incluye ida y vuelta.</p>
+                    <label class="check-option radio-option">
+                        <input type="radio" name="transportType" id="transportNormal" value="normal" checked onchange="actualizarPrecio()">
+                        <span>Normal</span><b id="normalTransportPrice">S/ 21</b>
+                    </label>
+                    <label class="check-option radio-option">
+                        <input type="radio" name="transportType" id="transportVip" value="vip" onchange="actualizarPrecio()">
+                        <span>VIP</span><b id="vipTransportPrice">S/ 36</b>
+                    </label>
+                </div>
+
+
+                <label class="check-option">
+
+                    <input type="checkbox"
+                           id="optionGuide"
+                           checked
+                           onchange="actualizarPrecio()">
+
+                    <span>
+                        🧑‍🏫 Guía
+                    </span>
+
+                    <b>
+                        + S/ 20
+                    </b>
+
+                </label>
+
+
+                <label class="check-option">
+
+                    <input type="checkbox"
+                           id="optionFood"
+                           checked
+                           onchange="actualizarPrecio()">
+
+                    <span>
+                        🍽️ Alimentación
+                    </span>
+
+                    <b>
+                        + S/ 25
+                    </b>
+
+                </label>
+
+
+                <label class="check-option">
+
+                    <input type="checkbox"
+                           id="optionHotel"
+                           onchange="actualizarPrecio()">
+
+                    <span>
+                        🏨 Alojamiento
+                    </span>
+
+                    <b>
+                        + S/ 50
+                    </b>
+
+                </label>
+
+            </div>
+
+
+            <label>
+                Fecha del viaje
+            </label>
+
+            <input type="date"
+                   id="customDate">
+
+
+            <label>
+                📝 Observaciones
+            </label>
+
+            <textarea
+                id="observations"
+                rows="4"
+                placeholder="Escribe aquí algo que te gustaría comentar o solicitar..."></textarea>
+
+
+            <div class="total-box">
+
+                <span>
+                    TOTAL
+                </span>
+
+                <strong id="customTotal">
+                    S/ 174
+                </strong>
+
+            </div>
+
+
+            <button class="confirm-button"
+                    onclick="confirmarPersonalizacion()">
+
+                Continuar con la reserva →
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==================================================
+     MODAL RESERVA
+================================================== -->
+
+<div id="reservationModal"
+     class="modal">
+
+    <div class="modal-content">
+
+
+        <button class="close-modal"
+                onclick="cerrarReserva()">
+
+            ×
+
+        </button>
+
+
+        <span class="mini-title">
+            RESERVA
+        </span>
+
+
+        <h2>
+            Completa tus datos
+        </h2>
+
+
+        <form onsubmit="confirmarReserva(event)">
+
+
+            <label>
+                Nombre completo
+            </label>
+
+            <input type="text"
+                   id="customerName"
+                   required
+                   placeholder="Tu nombre">
+
+
+            <label>
+                Número de teléfono
+            </label>
+
+            <input type="tel"
+                   id="customerPhone"
+                   required
+                   placeholder="Tu teléfono">
+
+
+            <label>
+                Correo electrónico
+            </label>
+
+            <input type="email"
+                   id="customerEmail"
+                   placeholder="tu@email.com">
+
+            <div class="origin-grid">
+                <div>
+                    <label>🌎 País</label>
+                    <input type="text" id="customerCountry" required placeholder="Ej. Perú">
+                </div>
+                <div>
+                    <label>🗺️ Departamento / Región</label>
+                    <input type="text" id="customerRegion" required placeholder="Ej. Cusco">
+                </div>
+                <div>
+                    <label>📍 Provincia</label>
+                    <input type="text" id="customerProvince" required placeholder="Ej. Espinar">
+                </div>
+                <div>
+                    <label>📍 Distrito</label>
+                    <input type="text" id="customerDistrict" required placeholder="Ej. Yauri">
+                </div>
+            </div>
+
+            <label>🗣️ Idioma que habla</label>
+            <select id="customerLanguage" required>
+                <option value="Español">Español</option>
+                <option value="English">English</option>
+                <option value="Português">Português</option>
+                <option value="Français">Français</option>
+                <option value="Deutsch">Deutsch</option>
+                <option value="Otro">Otro</option>
+            </select>
+
+
+            <button class="confirm-button"
+                    type="submit">
+
+                🎟️ Confirmar reserva
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==================================================
+     CONFIRMACIÓN
+================================================== -->
+
+<div id="successModal"
+     class="modal">
+
+    <div class="success-content">
+
+        <div class="success-icon">
+            ✓
+        </div>
+
+
+        <h2>
+            ¡Reserva recibida!
+        </h2>
+
+
+        <p>
+            Gracias por elegir
+            <strong>Espinar Turismo</strong>.
+        </p>
+
+
+        <div class="reservation-code">
+
+            <span>
+                CÓDIGO DE RESERVA
+            </span>
+
+            <strong id="reservationCode">
+                ESP-0000
+            </strong>
+
+        </div>
+
+
+        <p id="reservationSummary"></p>
+
+        <div class="next-trip-box">
+            <span>🎁 BENEFICIO PARA TU PRÓXIMO VIAJE</span>
+            <strong>10% DE DESCUENTO</strong>
+            <p>Tu código personal:</p>
+            <b id="nextTripCode">VUELVE-0000</b>
+        </div>
+
+        <p class="return-phrase">“Conoce Espinar hoy, vuelve por más mañana.”</p>
+
+
+        <button
+            onclick="cerrarConfirmacion()">
+
+            Volver a la página
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==================================================
+     OPINIONES
+================================================== -->
+
+<section class="section reviews">
+
+    <div class="section-title">
+
+        <span>
+            EXPERIENCIAS
+        </span>
+
+        <h2>
+            Lo que dicen nuestros visitantes
+        </h2>
+
+    </div>
+
+
+    <div class="reviews-grid">
+
+
+        <div class="review">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                “Una experiencia muy bonita.
+                Los paisajes son increíbles.”
+            </p>
+
+            <strong>
+                Visitante de Cusco
+            </strong>
+
+        </div>
+
+
+        <div class="review">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                “Me gustó conocer la historia
+                y cultura de Espinar.”
+            </p>
+
+            <strong>
+                Visitante
+            </strong>
+
+        </div>
+
+
+        <div class="review">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                “La experiencia en familia
+                fue excelente.”
+            </p>
+
+            <strong>
+                Visitante
+            </strong>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+    <div class="footer-main">
+
+
+        <div>
+
+            <div class="logo footer-logo">
+
+                <span>🏔️</span>
+
+                <div>
+
+                    <strong>
+                        ESPINAR
+                    </strong>
+
+                    <small>
+                        TURISMO
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <p>
+                Descubre, vive y comparte
+                la riqueza turística de Espinar.<br><br><em>“Conoce Espinar hoy, vuelve por más mañana.”</em>
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Explora
+            </h3>
+
+            <a href="#destinos">
+                Destinos
+            </a>
+
+            <a href="#paquetes">
+                Paquetes
+            </a>
+
+            <a href="#ofertas">
+                Ofertas
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Servicios
+            </h3>
+
+            <a href="#servicios">
+                Transporte
+            </a>
+
+            <a href="#servicios">
+                Guías
+            </a>
+
+            <a href="#servicios">
+                Gastronomía
+            </a>
+
+            <a href="#servicios">
+                Alojamiento
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Síguenos
+            </h3>
+
+
+            <div class="socials">
+
+                <a href="#"
+                   title="Facebook">
+                    f
+                </a>
+
+                <a href="#"
+                   title="Instagram">
+                    ◎
+                </a>
+
+                <a href="#"
+                   title="TikTok">
+                    ♪
+                </a>
+
+                <a href="#"
+                   title="WhatsApp">
+                    ☎
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 Espinar Turismo.
+        Proyecto turístico local.
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
